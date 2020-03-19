@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700|Nanum+Myeongjo:400,700&subset=korean');
+
+/*font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;*/
+body {width: 100%; height: 100%; font-family: 'Nanum Gothic', sans-serif;}
+
+header {width:100%; height:5.5555%; background: #4a89bc; position: relative;}
+header>h1 {position: absolute;bottom:0; left: 45px;}
+header>ul {width: 22.125%; margin: 0 auto; height:60px; line-height: 60px;}
+header>ul>li {float: left; width: 25%; }
+header>ul>li>a {color: #fff;}
+header>ul>li:hover a {color:#f6bb42; }
+.main {height: 74.3518%;}
+.main>li {float: left; color: #1d1d1d;}
+
+.main>li:nth-child(2),
+.main>li:nth-child(3),
+.main>li:nth-child(4) {width: 33.3333%; text-align: center; position: relative; height: 350px;}
+
+.main>li:nth-child(2)>h1,
+.main>li:nth-child(3)>h1,
+.main>li:nth-child(4)>h1 {text-align: left; font-size: 20px; position: absolute; top:20px; left: 20px; }
+
+.main>li:nth-child(2) {background: #f6bb42;}
+.main>li:nth-child(3) {background: #fff;}
+.main>li:nth-child(4) {background: #ebebeb;}
+
+.main>li:nth-child(2)>a {position: absolute; width: 100%; left: 0; right:0; margin: auto; top: 10%;}
+.main>li:nth-child(3)>a {position: absolute; width: 100%; left: 0; right:0; margin: auto; top: 30%;}
+.main>li:nth-child(4)>a {position: absolute; width: 100%; left: 0; right:0; margin: auto; top: 35%;}
+
+.main>li:nth-child(1) {width: 100%; height:453px; background: #fff; position: relative; z-index: -99;}
+
+.main>li:nth-child(1)>h1 {font-size: 55px; position: absolute; left: 27.9687%; top: 24.5467%; line-height: 1.3em;}
+.main>li:nth-child(1)>h1>span { font-weight: bold; }
+.main>li:nth-child(1)>h2 {font-size: 55px; right: 30.9687%; position: absolute; top: 36.6447%; line-height: 1.3em;}
+.main>li:nth-child(1)>h2>span {font-weight: bold;}
+.main>li:nth-child(1)>p {font-size: 22px;}
+.main>li:nth-child(1)>p:nth-of-type(1) { position: absolute; left: 31.25%; bottom: 24.5022%;}
+.main>li:nth-child(1)>p:nth-of-type(2) { position: absolute; right:28.7812%; bottom: 25.7993%;}
+.main>li:nth-child(1)>h3 {width: 450px; position: absolute; bottom: 0; left:0; right:0; margin: auto;}
+.main>li:nth-child(1)>h3>img {width: 70%; display: block;}
+.main>li:nth-child(1)>div {background: #4a89bc; height: 100%; width: 20.9166%; position: absolute; top:0; z-index: -9; right:9.8958%; left:0; margin: auto; transform: skew(-40deg);}
+
+footer {clear: both; height: 80px; width: 100%; overflow: hidden; background: #f9f9f9;}
+footer>div {position: relative; top: 30%; width: 100%; left: 20px;}
+footer>div>h1 {margin-bottom: 10px; font-weight: bold; }
+footer>div>h1>a {color: #1d1d1d;}

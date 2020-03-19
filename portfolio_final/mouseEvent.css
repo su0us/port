@@ -1,0 +1,46 @@
+@charset "utf-8";
+  body, html {width: 100%; height: 100%;}
+  .wrap {position: relative;}
+  h1 {text-indent: -9999px;}
+  h2 {text-indent: -9999px;}
+  h1 img{position: absolute; top:30px; left:30px;}
+  h2 img{position: absolute; top:30px; right:30px;}
+  h3 img{position: absolute; top:220px; right:530px; z-index: 2;}
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: url(images/mainBg.png)no-repeat;
+}
+
+.cloudG{ position: relative; margin-top: 12%;}
+
+.cloud1 {  position: absolute;
+  top: 10%;
+  left: 15%; 
+  height: auto;
+  z-index: 2;
+ }
+.cloud2 {  position: absolute;
+  top: 20%;
+  left: 40%;
+  height: auto;
+  z-index: 2;
+}
+.cloud3 {  position: absolute;
+  right: 35%;
+  top: 20%;
+  height: auto;
+  z-index: 2;
+}
+.cloud4 {  position: absolute;
+  top: 20%;
+  right: 5%;
+  height: auto;
+  z-index: 2;
+}
+
+.icon {position: absolute; top: 30px;}
+
+.icon2 {position: absolute; top: 100px; left:-110px;}
+.icon4{position: absolute; top: 100px; left:0px;}

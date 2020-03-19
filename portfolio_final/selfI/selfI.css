@@ -1,0 +1,300 @@
+@charset "UTF-8";
+* {
+  outline: none;
+}
+
+body, html {
+  margin: 0;
+  background: #eee;
+  font-family: sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 15px;
+  color: #9c9c9c;
+  cursor: default;
+  background:url(images/bg1.png)no-repeat; overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #9c9c9c;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h3 {
+  color: #797979;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.xIcon {text-indent: -9999px;}
+.xIcon img{position: absolute; top:30px; right: 30px;}
+.about {line-height: 1.3em; }
+.resume {
+  width: 1080px;
+  background: #fbfbfb;
+  margin: 5% auto;
+  border: 1px solid #bbb;
+  box-shadow: 0 0 20px -3px #bbb;
+  position: relative;
+  display: flex;
+}
+.resume::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: #adc8ee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.resume::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.resume .base, .resume .func {
+  box-sizing: border-box;
+  float: left;
+}
+.resume .base > div, .resume .func > div {
+  padding-bottom: 10px;
+}
+.resume .base > div:last-of-type, .resume .func > div:last-of-type {
+  padding-bottom: 0;
+}
+.resume .base {
+  width: 300px;
+  padding: 30px 15px;
+  background: rgba(238, 238, 238, 0.6);
+}
+.resume .base .profile {
+  background: #adc8ee;
+  padding: 30px 15px 5px 15px;
+  margin: -30px -15px 45px -15px;
+  position: relative;
+  z-index: 2;
+}
+.resume .base .profile::after {
+  content: "";
+  position: absolute;
+  background: #adc8ee;
+  width: 100%;
+  height: 30px;
+  bottom: -15px;
+  left: 0;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+.resume .base .profile .photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+.resume .base .profile .info {
+  text-align: center;
+  color: #fcfcfc;
+}
+.resume .base .profile .info .name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+.resume .base .contact div {
+  line-height: 24px;
+}
+.resume .base .contact div a:hover {
+  color: #e07a5f;
+}
+.resume .base .contact div a:hover span::after {
+  width: 100%;
+}
+.resume .base .contact div:hover i {
+  color: #e07a5f;
+}
+.resume .base .contact div i {
+  color: #adc8ee;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+  transition-duration: 0.3s;
+}
+.resume .base .contact div span {
+  position: relative;
+}
+.resume .base .contact div span::after {
+  content: "";
+  position: absolute;
+  background: #e07a5f;
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+}
+
+.resume .func {
+  width: 745px;
+  padding: 30px 55px;
+}
+.resume .func:hover > div {
+  transition-duration: 0.3s;
+}
+.resume .func:hover > div:hover h3 {
+  letter-spacing: 1.6px;
+}
+.resume .func:hover > div:hover h3 i {
+  transform: scale(1.2);
+}
+.resume .func:hover > div:not(:hover) {
+  opacity: 0.5;
+}
+.resume .func h3 {
+  transition-duration: 0.3s;
+  margin-top: 0;
+}
+.resume .func h3 i {
+  color: #fcfcfc;
+  background: #adc8ee;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition-duration: 0.3s;
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #3d405b;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(61, 64, 91, 0);
+  }
+}
+
+
+.resume .func .skills-prog {
+  clear: both;
+}
+.resume .func .skills-prog ul {
+  margin-left: 15px;
+  margin-top: 25px;
+}
+.resume .func .skills-prog ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.resume .func .skills-prog ul li:hover {
+  color: #e07a5f;
+}
+
+.resume .func .skills-prog ul li span {
+  display: block;
+  width: 120px;
+}
+.resume .func .skills-prog ul li .skills-bar {
+  background: pink;
+  height: 2px;
+  width: calc(100% - 120px);
+  position: relative;
+  border-radius: 2px;
+}
+.resume .func .skills-prog ul li .skills-bar .bar {
+  position: absolute;
+  top: -1px;
+  height: 4px;
+  background: blue;
+  box-shadow: 0 0 0 #adc8ee;
+  border-radius: 5px;
+}
+.resume .func .skills-soft ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.resume .func .skills-soft ul li {
+  position: relative;
+}
+
+.resume .func .skills-soft ul li svg {
+  width: 95%;
+  fill: transparent;
+  transform: rotate(-90deg);
+}
+.resume .func .skills-soft ul li svg circle {
+  stroke-width: 1px;
+  stroke: #cdcdcd;
+}
+.resume .func .skills-soft ul li svg .cbar {
+  stroke-width: 3px;
+  stroke: #adc8ee;
+  stroke-linecap: round;
+}
+.resume .func .skills-soft ul li span, .resume .func .skills-soft ul li small {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 52%;
+  transition-duration: 0.3s;
+}
+.resume .func .skills-soft ul li span {
+  top: 40%;
+}
+.resume .func .interests-items {
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.resume .func .interests-items div {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.resume .func .interests-items div:hover i {
+  transform: scale(1.2);
+}
+.resume .func .interests-items div:hover span {
+  color: #e07a5f;
+  transition-duration: 0.3s;
+}
+.resume .func .interests-items div i {
+  font-size: 45px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #adc8ee;
+  transition-duration: 0.3s;
+}
+.resume .func .interests-items div i.guitar {
+  display: block;
+  margin: 0 auto;
+}
+.resume .func .interests-items div i.guitar svg {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  fill: #adc8ee;
+}
+.resume .func .interests-items div span {
+  display: block;
+}

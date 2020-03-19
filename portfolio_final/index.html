@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>port</title>
+	<link rel="stylesheet" href="common/reset.css">
+  <link rel="stylesheet" href="mouseEvent.css">
+
+	<style>
+
+
+
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="common/jquery-3.3.1.min.js"></script>
+	<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="carousel right">
+  <div class="indicator">
+<div class="wrap">
+<h1>임시로고<a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
+<h2>임시메뉴<a href="menu.html"><img src="images/button.png" alt="메뉴버튼"></a></h2>
+<h3><img src="images/cld.png" alt="구름" class="cloud5"></h3>
+<ul class="cloudG">
+	<li class="cloud cloud1"><a href="portPage/portProfile.html"><img src="images/man.gif" alt="남자장승" width="150px"></a><img src="images/profile.png" alt="프로필아이콘" class="icon icon1"></li>
+	<li  class="cloud cloud2"><a href="portPage/portWeb.html"><img src="images/jangseng.gif" alt="장승" width="140px"></a><img src="images/webIcon.png" alt="웹아이콘" class="icon icon2"></li>
+	<li class="cloud cloud3"><a href="portPage/portMobile.html"><img src="images/ho1.gif" alt="호랑이1" width="200px"></a><img src="images/mobileIcon.png" alt="모바일아이콘" class="icon icon3"></li>
+	<li class="cloud cloud4"><a href="portPage/portUi.html"><img src="images/do1.gif" alt="도깨비1"  width="350px"></a><img src="images/uiuxIcon.png" alt="uiux아이콘" class="icon icon4"></li>
+</div>
+</div>
+</div>
+<script>
+$('li>a').eq(0).mouseenter(function(){
+ 	$('li>a>img').eq(0).attr('src','images/man2.gif');
+ });
+ $('li>a').eq(0).mouseleave(function(){
+ 	$('li>a>img').eq(0).attr('src','images/man.gif');
+ });
+
+
+
+ $('li>a').eq(2).mouseenter(function(){
+ 	$('li>a>img').eq(2).attr('src','images/ho2.gif');
+ });
+ $('li>a').eq(2).mouseleave(function(){
+ 	$('li>a>img').eq(2).attr('src','images/ho1.gif');
+ });
+
+
+ $('li>a').eq(3).mouseenter(function(){
+ 	$('li>a>img').eq(3).attr('src','images/do2.gif');
+ });
+ $('li>a').eq(3).mouseleave(function(){
+ 	$('li>a>img').eq(3).attr('src','images/do1.gif');
+ });
+
+
+ $('h3').mouseenter(function(){
+ 	$('h3 img').animate({right:830});
+ });
+ $('h3').mouseleave(function(){
+ 	$('h3 img').animate({right:530});
+ });
+</script>
+  <script src="mouseEvent.js"></script>
+
+</body>
+</html>

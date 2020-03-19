@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,700|Gaegu');
+
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+font-family: 'Averia Sans Libre', 'Gaegu', cursive;
+width:100%; height:100%;
+}
+.wrap>ul {position: relative; z-index:999; width: auto; height: 100%; top: 200px;}
+.icon {
+  width: auto;
+  height: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.wrap li:nth-child(1) {  position: absolute;
+  top: -450px;
+  left:13%; 
+  z-index: 2;
+ }
+.wrap li:nth-child(2){  position: absolute;
+  top: -350px;
+  left: 32%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+.wrap li:nth-child(3){  position: absolute;
+  top: -500px;
+  right: 32%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+.wrap li:nth-child(4){  position: absolute;
+  top: -350px;
+  right: 13%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
+.wrap p {position: absolute; bottom:10px; z-index: 9999; text-align: center; left:0; right:0; margin:auto; width: 200px; font-size:27px; color: #fff;}
+
+.wrap li:hover {cursor: pointer;}
+.wrap li:hover p {color: #9f9faa; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+  text-align: center;
+  z-index: 100;
+  color: #fff;
+  font-family: Courier;
+}
+
+/* 해 모션 */
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  animation-name: the-sky-color;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-duration: 13s;
+}
+
+/*.grass {background: url(images/mt.png)no-repeat; width: 100%; height:100%;z-index: 99; position: absolute; bottom: 0px;}*/
+
+.sun{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: yellow;
+    animation-name: sun-lapse;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    position: relative; top: 130px;
+}
+
+.shooting-star {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    animation-name: streak;
+    animation-duration: 0.5s;
+    animation-delay: 12s;
+    transform: scale(0);
+}
+
+.shooting-star2 {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    animation: streak2 0.4s 12s;
+    transform: scale(0);
+}
+
+.shooting-star3 {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    animation: streak3 0.3s 12s;
+    transform: scale(0);
+}
+
+.shooting-star4 {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    animation: streak2 0.6s 12s;
+    transform: scale(0);
+}
+
+@keyframes the-sky-color {
+    0% {
+        background:url(images/subBg1.png) no-repeat; background-size: 100% 100%;
+    }
+
+    30% {
+        background:url(images/subBg1.png) no-repeat; background-size: 100% 100%;
+    }
+    50% {
+        background:url(images/subBg2.png) no-repeat; background-size: 100% 100%;
+    
+    }
+
+    90% {
+        background:url(images/subBg3.png) no-repeat; background-size: 100% 100%;
+    }
+   100% {
+        background:url(images/subBg3.png) no-repeat; background-size: 100% 100%;
+    }
+}
+
+@keyframes sun-lapse {
+      0% {
+    transform: translate(-10vw, 10vh);
+    background: red;
+  }
+  22.5% {
+    transform: translate(14.75vw, -10vh);
+    background: orange;
+  }
+  45% {
+    transform: translate(40vw, -20vh);
+    background: orange;
+  }
+  71.5% {
+    transform: translate(70vw, -10vh);
+    background: #f7db09;
+  }
+  100% {
+    transform: translate(100vw, 10vh);
+    background: yellow;
+  }
+}
+
+@keyframes streak {
+    0%{
+        transform: translate(250px, 0) scale(1);
+    }
+    100%{
+        transform: translate(1200px, 600px) scale(2);
+    }
+}
+
+@keyframes streak2 {
+    0%{
+        transform: translate(200px, 0) scale(1);
+    }
+    100%{
+        transform: translate(1250px, 600px) scale(2);
+    }
+}
+
+@keyframes streak3 {
+    0%{
+        transform: translate(190px, 0) scale(1);
+    }
+    100%{
+        transform: translate(1250px, 550px) scale(2);
+    }
+}
+
+@keyframes streak4 {
+    0%{
+        transform: translate(150px, 0) scale(1);
+    }
+    100%{
+        transform: translate(1300px, 650px) scale(2);
+    }
+}

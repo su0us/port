@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700|Nanum+Myeongjo:400,700');
+
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+
+* body html {
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+.wrap {width: 1080px; margin: 50px auto;
+border: 1px solid #c4c4c4;
+ color: #3b3838; font-size: 16px; position: relative;}
+h2 img{position: absolute; top:30px; right:30px; z-index: 9999;}
+.main {background: url(images/sub1.jpg); width: 100%; height: 690px; color: #fff; position: relative;}
+.main>h1{ font-size: 50px; font-family: 'Nanum Myeongjo', serif; font-weight: bold; padding: 30px;}
+.main ul{width: 500px; margin:0 auto; position: absolute; bottom: 20px; left:0; right:0; 
+}
+
+.main li{width: 230px; margin:10px; float: left;}
+.main li>h2 {text-transform: uppercase; margin: 5px 0;}
+
+
+.story { position: relative; overflow: hidden;}
+.story>h3 {position: absolute; left:0; width: 200px; font-size: 30px; }
+.story ul {width:730px; margin: 0 auto;}
+.story li {margin:50px 0 50px 0; }
+.story li>h2 {text-transform: uppercase;margin-bottom: 5px;}
+.story li>p {text-transform: uppercase; line-height: 1.3em;}
+
+
+
+.fonts {background:#e3dce3; height: 240px; position: relative; overflow: hidden;}
+.fonts>h3 {position: absolute; right:0; font-size: 30px; color: #fff; border-bottom:#fff 2px solid;}
+.fonts>ul {width:600px; margin:55px auto;}
+.fonts>ul>li {float: left; width: 300px; text-align: center;}
+.fonts>ul>li:nth-child(1) {font-family: 'Nanum Myeongjo', serif;}
+.fonts>ul>li>h2 {text-align: left; text-indent: 45px;}
+.fonts>ul>li>ul>li {float: left; width: 150px;}
+.fonts>ul>li>ul>li>h2 {font-size:50px; padding:25px 0; }
+.fonts>ul>li>ul>li:nth-child(2) {font-weight: bold;}
+.fonts>ul>li>ul>li:nth-child(2) {font-weight: bold;}
+
+
+.color {overflow: hidden; text-transform: uppercase;}
+.color>ul {width: 700px; margin:55px auto; height:115px; }
+.color>ul>li {width: 200px; float: left; text-align: right;}
+.color>ul>li:nth-of-type(2) {margin:auto 50px;}
+.color>ul>li>div {width: 200px; height: 60px;}
+.color>ul>li>h2 {padding: 10px 0 5px 0;}
+.color>ul>li:nth-child(1) div{background: #dce4de;}
+.color>ul>li:nth-child(2) div{background: #f8f8f8;}
+.color>ul>li:nth-child(3) div{background: #000;}
+
+.design { background:#e3dce3; overflow: hidden; position: relative;}
+.design>h3 {color: #fff; border-bottom:#fff 2px solid; position:absolute; right:0; }
+.design div {width: 780px; margin: 0 auto; padding: 150px 0 60px 0; }
+.design div>h2 {margin: 70px 0 10px 0; text-transform: uppercase;}
+.design div>p {line-height: 1.3em;}
+
+.purblrising {}
+.purblrising ul {width: 730px; margin: 70px auto;}
+.purblrising li:nth-of-type(2) {margin-top: 60px;}
+.purblrising li h1 {text-transform: uppercase;}
+.purblrising p {margin: 10px 0; line-height: 1.3em;}
+.purblrising div {margin: 100px auto 70px  auto; width: 240px;}
+.purblrising a {font-size: 22px; border: 1px solid #DCE4DE; padding: 10px 20px; width: 240px; color: #DCE4DE; z-index: 99; text-align: center;}
+.purblrising div:hover a {background: #DCE4DE; border: none; color: #fff;} 
+h3 {text-transform: uppercase; font-size: 30px; width: 170px; padding-bottom:15px; border-bottom: 2px solid #e3dce3; transform: rotate(-90deg); position: relative; top:60px;}
+
+.purblrising>h3 {position: relative; top: 90px; width: 230px; left: -50px;}
+
+.purblrising>div:nth-of-type(2){margin: 50px auto 70px  auto; width: 240px;}
+.purblrising>div:nth-of-type(2) a {border: none; padding: 10px 35px; color:#e9c5e9; }
+.purblrising>div:nth-of-type(2):hover .aTwo {color: #fff; background: #e9c5e9;}
