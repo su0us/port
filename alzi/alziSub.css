@@ -5,9 +5,9 @@
 
 body {font-family: 'Nanum Gothic', sans-serif; width: 100%; height: 100%; ; position: relative; }
 
-.bgBox1 {background: url(images/bgY.png) no-repeat; width:100%;  height: 100%;
+.bgBox1 {background: url(images/bgY.png) no-repeat; width:100%;  height: 100%; 
 	background-position-y: 300px;
-	background-size: contain;
+	background-size: cover;
 }
 .header>div{width: 80%;margin: 200px auto 0 auto; text-align: center;
 }
